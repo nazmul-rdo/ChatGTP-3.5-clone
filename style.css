@@ -256,3 +256,37 @@ span.material-symbols-rounded {
     font-size: 1.25rem!important;
   }
 }
+
+.talkwihtus {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.talkwihtus a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.talkwihtus a.email {
+    background-color: #2196F3;
+}
+
+.talkwihtus a:hover {
+    background-color: #45a049;
+}
+
+/* Animation styles */
+.talkwihtus.show {
+    opacity: 1;
+    transform: translateY(0);
+}
